@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; }
+
+body {
+	font-family: "Open Sans";
+
+	width: 93%;
+	margin: 0 auto;
+}
+
+h2 { margin-bottom: 14px; text-align: center; }
