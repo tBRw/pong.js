@@ -9,11 +9,14 @@ function Paddle(x, y, width, height) {
 	this.width = width;
 	this.height = height;
  	this.x_speed = 0;
-	this.y_speed = 0;
 }
 
 Paddle.prototype.render = function() {
-	context.fillStyle = "#000000";
+	context.fillStyle = "#FFFFFF";
 	context.fillRect(this.x, this.y, this.width, this.height);
 }
 
+Paddle.prototype.restart = function() {
+	this.x_speed = 0;
+	this.x       = CANVAS_WIDTH/2 - this.width/2;
+}
